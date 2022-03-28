@@ -3,25 +3,28 @@ package com.Leri.day8
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
-import android.util.Log
-import android.util.Log.i as i1
+import android.content.IntentFilter
+import android.widget.Toast
+
 
 class BrReceiver: BroadcastReceiver() {
-    var ischarging=true
+    var isconnected:Boolean = false
 
 
-    override fun onReceive(context: Context, intent: Intent) {
-        val action = intent.action
+    override fun onReceive(context: Context?, intent: Intent) {
 
-        if (intent.action.equals(Intent.ACTION_POWER_CONNECTED)) {
-            ischarging=true
-            Log.d("INFO", "meFDSFSDssage")
-        } else if (intent.action.equals(Intent.ACTION_POWER_DISCONNECTED )) {
-            ischarging=false
-            Log.d("INFO", "ARAAAAAAmeFDSFSDssage")
+        //val batteryStatus: Intent? = IntentFilter(Intent.ACTION_BATTERY_CHANGED).let { ifilter ->
+         //   context?.registerReceiver(null, ifilter) }
+
+        if (intent.action == Intent.ACTION_POWER_CONNECTED) {
+            isconnected=true
+
+           Toast.makeText(context, "phone device is charging", Toast.LENGTH_SHORT).show()
+        } else if( intent.action == Intent.ACTION_POWER_DISCONNECTED ){
+            isconnected=false
+            Toast.makeText(context, "phone is not charging", Toast.LENGTH_SHORT).show()
         }
     }
-
 
 
 

@@ -1,7 +1,6 @@
 package com.Leri.day8
 
 
-import android.content.BroadcastReceiver
 import android.content.Intent
 import android.content.IntentFilter
 import android.os.Bundle
@@ -18,7 +17,6 @@ class SecondActivity : AppCompatActivity() {
     lateinit var imggreen:ImageView
     lateinit var imgred:ImageView
     lateinit var btncheckcharging:Button
-    lateinit var brbr:BrReceiver
 
 
 
@@ -37,33 +35,21 @@ class SecondActivity : AppCompatActivity() {
     }
 
     private fun checkifcharging() {
-        imggreen.visibility = View.VISIBLE
-        imgred.visibility=View.VISIBLE
-
-        brbr=BrReceiver()
-        if(brbr.ischarging) {
-
-            Toast.makeText(this,"phone is charging",Toast.LENGTH_SHORT).show()
-        }
-        else if(!brbr.ischarging){
-            Toast.makeText(this,"charger disconected",Toast.LENGTH_SHORT).show()
-        }
-
-
-
+        //imggreen.visibility = View.VISIBLE
+        //imgred.visibility=View.VISIBLe
 
     }
+
 
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu, menu)
         return super.onCreateOptionsMenu(menu)
     }
-
     fun opennewfeature(item: MenuItem) {
         val intent4 = Intent(this, ThirdActivity::class.java)
         startActivity(intent4)
 
     }
-
 }
+
