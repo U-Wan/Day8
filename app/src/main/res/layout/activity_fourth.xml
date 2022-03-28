@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FourthActivity"
+    android:background="#17c3b2">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="42sp"
+        android:background="#fef9ef"
+        android:textColor="#FF0000"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:text="Person information:"/>
+
+    <TextView
+        android:id="@+id/nameview"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:text="name"
+        android:textSize="35sp"
+        android:background="#ffcb77"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/ageview"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="#fe6d73"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:text="age" />
+
+</LinearLayout>
