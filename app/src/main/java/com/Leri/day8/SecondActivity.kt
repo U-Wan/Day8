@@ -1,15 +1,11 @@
 package com.Leri.day8
 
-
 import android.content.Intent
-import android.content.IntentFilter
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.view.View
 import android.widget.Button
 import android.widget.ImageView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 
@@ -35,8 +31,11 @@ class SecondActivity : AppCompatActivity() {
     }
 
     private fun checkifcharging() {
+        //when user click button photo should pop up
         //imggreen.visibility = View.VISIBLE
         //imgred.visibility=View.VISIBLe
+
+
 
     }
 

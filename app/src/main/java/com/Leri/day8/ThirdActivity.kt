@@ -18,7 +18,7 @@ class ThirdActivity : AppCompatActivity() {
     lateinit var btnsearch:Button
     lateinit var edtlink:EditText
     lateinit var imgview:ImageView
-    var img2="https://images.ctfassets.net/u0haasspfa6q/1uGsqwmSpOUN3ITzZ0akhp/7582e3072d2da76fdc3689527f808268/girl-in-the-sunset-on-some-rocks-on-the-water?w=1920&fm=webp&q=90"
+   // var img2="https://images.ctfassets.net/u0haasspfa6q/1uGsqwmSpOUN3ITzZ0akhp/7582e3072d2da76fdc3689527f808268/girl-in-the-sunset-on-some-rocks-on-the-water?w=1920&fm=webp&q=90"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

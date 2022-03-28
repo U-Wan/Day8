@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Day8</string>
+    <string name="name">Name</string>
+    <string name="age">Age</string>
+    <string name="save">Save</string>
+    <string name="person_information">Person information:</string>
+    <string name="paste_image_link">paste image link</string>
+    <string name="image_link">image link</string>
+    <string name="search">Search</string>
 </resources>

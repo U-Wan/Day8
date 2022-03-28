@@ -15,13 +15,13 @@
         android:textColor="#FF0000"
         android:layout_gravity="center"
         android:layout_margin="20dp"
-        android:text="Person information:"/>
+        android:text="@string/person_information"/>
 
     <TextView
         android:id="@+id/nameview"
         android:layout_width="match_parent"
         android:gravity="center"
-        android:text="name"
+        android:text="@string/name"
         android:textSize="35sp"
         android:background="#ffcb77"
         android:layout_marginTop="50dp"
@@ -38,6 +38,6 @@
         android:textSize="35sp"
         android:layout_marginTop="10dp"
         android:layout_gravity="center_horizontal"
-        android:text="age" />
+        android:text="@string/age" />
 
 </LinearLayout>
